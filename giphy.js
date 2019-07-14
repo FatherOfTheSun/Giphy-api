@@ -13,8 +13,7 @@ function displayanimalInfo() {
         url: queryURL,
         method: "GET"
     }).then(function (response) {
-        // Step 1: Run this file, click a button, and see what the response object looks like in the browser's console.
-        // Open up the data key, then open up the 0th, element. Study the keys and how the JSON is structured.
+
         var results = response.data;
 
         console.log(response);
@@ -41,12 +40,12 @@ function renderButtons() {
 
     $("#buttons-view").empty();
 
-    // Looping through the array of movies
+    // Looping through the array  
     for (var i = 0; i < animals.length; i++) {
 
 
         var a = $("<button>");
-        // Adding a class of movie-btn to our button
+        // Adding a class of 
         a.addClass("animal-btn");
         // Adding a data-attribute
         a.attr("data-animal", animals[i]);
@@ -57,16 +56,16 @@ function renderButtons() {
     }
 }
 
-// This function handles events where a movie button is clicked
+// This function handles events where 
 $("#add-animal").on("click", function (event) {
     event.preventDefault();
     // This line grabs the input from the textbox
     var animal = $("#animal-input").val().trim();
 
-    // Adding movie from the textbox to our array
+    // Adding animal from the textbox to our array
     animals.push(animal);
 
-    // Calling renderButtons which handles the processing of our movie array
+
     renderButtons();
 
 
@@ -74,7 +73,7 @@ $("#add-animal").on("click", function (event) {
 
 });
 
-// Adding a click event listener to all elements with a class of "movie-btn"
+// Adding a click event listener to all elements 
 $(document).on("click", ".animal-btn", displayanimalInfo);
 
 // Calling the renderButtons function to display the intial buttons
