@@ -1,0 +1,72 @@
+#buttons{
+   
+    font-size: 15px;
+    text-align: center;
+    text-shadow: 1px 1px black;
+    padding: 2%; 
+    margin: 3px;
+    box-shadow: 4px 4px lightblue;
+    color: white;
+    background-color: gray;
+    border: none;
+    outline: none;
+    
+ 
+
+}
+#buttons:hover{
+    
+    background-color: lightgray;
+    box-shadow: 4px 4px light;
+}
+
+#buttons:active{ 
+ 
+    background-color: whitesmoke;
+    box-shadow: 2px 2px lightgray;
+    transform: translateY(3px);
+}
+#buttons-view{
+color: white; 
+}
+
+#animal-form{
+    
+    text-align: right;
+    padding: 1%;
+
+}
+#animal-input{
+  
+    font-size: 15px;
+    box-shadow: 2px 2p lightgrey;
+    margin: 5px;
+}
+#add-animal{
+    font-size: 15px;
+    text-shadow: 1px 1px lightgray;
+    text-align: center;
+    margin: 3px;
+    box-shadow: 2px 2px lightblue;
+    color: black;
+    background-color: grey;
+    border: none;
+    outline: none;
+   
+
+}
+#add-animal:hover{
+    
+    background-color: lightgray;
+    box-shadow: 2px 2px lightblue;
+    border-radius: 8px;
+
+}
+ #img{
+    margin: 10px;
+    box-shadow: 3px 3px grey;
+    outline: none;
+    
+
+}
+

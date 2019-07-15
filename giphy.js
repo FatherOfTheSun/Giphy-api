@@ -23,15 +23,19 @@ function displayanimalInfo() {
                 var gifAnimal = $("<div>");
                 var rating = results[i].rating;
                 var p = $("<p>").text("Rating: " + rating);
-                var animalImg = $("<img>");
-                animalImg.attr("src", results[i].images.fixed_height.url);
+                var animalImg = $("<input id='img' type='image'> ");
+                animalImg.attr("src", results[i].images.fixed_height_still.url);
+                gifAnimal.prepend(animalImg);
                 gifAnimal.prepend(p);
-                $('#animal-view').prepend(animalImg)
+                $('#animal-view').prepend(animalImg);
+
             }
         }
 
 
     });
+
+
 }
 
 
@@ -44,7 +48,7 @@ function renderButtons() {
     for (var i = 0; i < animals.length; i++) {
 
 
-        var a = $("<button>");
+        var a = $("<button id = 'buttons'>");
         // Adding a class of 
         a.addClass("animal-btn");
         // Adding a data-attribute
@@ -78,3 +82,6 @@ $(document).on("click", ".animal-btn", displayanimalInfo);
 
 // Calling the renderButtons function to display the intial buttons
 renderButtons();
+
+
+
