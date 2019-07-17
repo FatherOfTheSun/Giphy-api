@@ -23,8 +23,8 @@ function displayanimalInfo() {
                 var gifAnimal = $("<div>");
                 var rating = results[i].rating;
                 var p = $("<p>").text("Rating: " + rating);
-                var animalImg = $("<input id='img' type='image'> ");
-                animalImg.attr(results[i].images.fixed_height_still.url);
+                var animalImg = $("<input class='img' type='image'> ");
+                animalImg.attr("src", results[i].images.fixed_height_still.url);
                 gifAnimal.prepend(animalImg);
                 gifAnimal.prepend(p);
                 $('#animal-view').prepend(animalImg);
@@ -82,6 +82,8 @@ $(document).on("click", ".animal-btn", displayanimalInfo);
 
 // Calling the renderButtons function to display the intial buttons
 renderButtons();
+
+// .on(click, img, )
 
 
 
