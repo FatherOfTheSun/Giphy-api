@@ -24,7 +24,7 @@ function displayanimalInfo() {
                 var rating = results[i].rating;
                 var p = $("<p>").text("Rating: " + rating);
                 var animalImg = $("<input id='img' type='image'> ");
-                animalImg.attr("src", results[i].images.fixed_height_still.url);
+                animalImg.attr(results[i].images.fixed_height_still.url);
                 gifAnimal.prepend(animalImg);
                 gifAnimal.prepend(p);
                 $('#animal-view').prepend(animalImg);
